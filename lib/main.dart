@@ -17,6 +17,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            print('BUTTON CLICKED');
+          },
+          child: Text("qwer"),
+        ),
+        // floatingActionButton: FloatingActionButton(
+        //   child: Text(a.toSt),
+        //   onPressed: () {
+        //     print(a);
+        //     a++;
+        //   },
+        // ),
         appBar: AppBar(title: Text("test"), backgroundColor: Colors.blue),
         body: ListView.builder(
           itemCount: users.length,
